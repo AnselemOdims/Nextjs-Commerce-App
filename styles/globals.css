@@ -19,12 +19,14 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.grid-pattern {
+  @apply grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4
+}
+
+.card {
+  @apply flex flex-col rounded shadow
+}
+
+.primary-button {
+  @apply rounded p-2 px-3 bg-amber-400 text-white m-2 mt-3 hover:bg-amber-500 font-semibold
 }
