@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Header from './Header';
+import Footer from './Footer';
 
 const Layout = ({ title, children }) => {
   return (
@@ -11,7 +12,7 @@ const Layout = ({ title, children }) => {
         <div className="flex min-h-screen flex-col justify-between">
           <Header />
           <main className="container m-auto mt-4 px-4">{children}</main>
-          <footer className="flex justify-center items-center h-10 shadow-inner">This is the footer</footer>
+          <Footer/>
         </div>
       </Head>
     </>
